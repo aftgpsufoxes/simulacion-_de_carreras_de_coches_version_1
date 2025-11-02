@@ -22,18 +22,18 @@ bool esClavo(int posCoche) {
 	int divisores = 0, dividendo = 2;
 	bool esClavo;
 
-	while (dividendo < posCoche && dividendo == 0) {
+	while (dividendo < posCoche && divisores == 0) {
 		if (posCoche % dividendo == 0) {
 			divisores = divisores + 1;
 		}
 		dividendo = dividendo + 1;
 	}
 
-	if (dividendo != 0) {
+	if (divisores != 0) {
 		esClavo = false;
 	}
 	else {
-		esClavo = false;
+		esClavo = true;
 	}
 	return esClavo;
 }
